@@ -21,6 +21,7 @@ const Navigation = () => {
     { href: '#projects', label: 'Projects' },
     { href: '#technology', label: 'Technology' },
     { href: '#team', label: 'Team' },
+    { href: '#faq', label: 'FAQ' },
     { href: '#contact', label: 'Contact' },
   ];
 

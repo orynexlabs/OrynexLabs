@@ -60,7 +60,7 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about Orynex and our blockchain platform
+            Everything you need to know about Orynex Labs and our projects.
           </p>
         </div>
 
