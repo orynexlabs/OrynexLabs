@@ -7,38 +7,39 @@ import { useState } from "react";
 
 const faqData = [
   {
-    question: "What is Orynex and how does it work?",
-    answer: "Orynex is a decentralized platform that connects freelancers and companies globally through blockchain technology. It provides secure payments, transparent contracts, and seamless collaboration tools powered by our native Orynex Token."
+    question: "What is Orynex Labs and what does it do?",
+    answer: "Orynex Labs is the parent company behind Orynex and its ecosystem. We focus on building decentralized solutions for global work, developing blockchain infrastructure, tools for freelancers, and innovative products that drive the new economy."
   },
   {
-    question: "How do I participate in the token presale?",
-    answer: "You can participate in our token presale by joining our whitelist and following the instructions provided. The presale offers 50M Orynex Tokens to early supporters at discounted rates."
+    question: "How can I invest in Orynex Labs initiatives?",
+    answer: "Investors can participate in Orynex Labs projects through token sales, private rounds, or partnerships. Details on ongoing funding rounds are available on our website and through our official communication channels."
   },
   {
-    question: "What blockchain will Orynex use?",
-    answer: "Initially, we'll launch on Solana for fast and low-cost transactions. Later, we'll migrate to our own Orynex Chain that will power all platform transactions, escrow services, and premium features."
+    question: "Which projects are under Orynex Labs?",
+    answer: "Orynex Labs develops and manages several initiatives including Orynex (Blockchain), Skentral (freelance and work ecosystem), HR & payroll tools, and other upcoming decentralized applications."
   },
   {
-    question: "How are payments handled on the platform?",
-    answer: "Payments are processed through secure smart contracts with escrow functionality. We support USDT for stable value transactions and Orynex Tokens for platform features and staking rewards."
+    question: "How does Orynex Labs ensure the security of its projects?",
+    answer: "We prioritize security by implementing robust blockchain protocols, regular audits, smart contract verifications, and secure infrastructure. Our goal is to protect both our users and partners across all projects."
   },
   {
-    question: "What are the benefits of holding Orynex Tokens?",
-    answer: "Token holders can stake for rewards, access premium platform features, participate in governance decisions, and benefit from the growing ecosystem as more users join the platform."
+    question: "Can individuals or companies partner with Orynex Labs?",
+    answer: "Yes. Orynex Labs welcomes partnerships with companies, developers, and communities. We collaborate to expand our ecosystem, integrate solutions, and support the adoption of decentralized work technologies globally."
   },
+//   {
+//     question: "Where is Orynex Labs based and do you operate globally?",
+//     answer: "Orynex Labs is registered in Delaware but operates globally. Our projects are accessible to users, freelancers, and businesses worldwide without geographical restrictions."
+//   },
+//   {
+//     question: "How does Orynex Labs fund its projects?",
+//     answer: "Funding comes from token sales, strategic investors, venture partnerships, and reinvestment from existing ecosystem revenue. We focus on sustainable growth to ensure long-term support for our products."
+//   },
   {
-    question: "Is Orynex available globally?",
-    answer: "Yes, Orynex is designed to be a global platform that removes geographical barriers. Our decentralized infrastructure enables users from anywhere in the world to participate in the new economy of work."
-  },
-  {
-    question: "How do you ensure security and trust?",
-    answer: "We use blockchain technology for transparency, smart contracts for automated escrow, and comprehensive verification systems. All transactions are recorded on-chain for complete audit trails."
-  },
-  {
-    question: "When will the platform launch?",
-    answer: "Our roadmap shows the platform launching in Phase 2, after the token presale completion. The full Orynex Chain integration will happen in Phase 3, with expanded features in Phase 4."
+    question: "What is the vision of Orynex Labs?",
+    answer: "Orynex Labs aims to redefine the global work economy by building decentralized, accessible, and secure tools that empower freelancers, businesses, and communities to transact and collaborate seamlessly across borders."
   }
 ];
+
 
 const FAQSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
