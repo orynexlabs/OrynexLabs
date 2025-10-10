@@ -139,6 +139,11 @@ canvas {
   display: block;
 }
 
+.text-primary-hero {
+  background: linear-gradient(90deg, var(--color-primary), #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
