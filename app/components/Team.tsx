@@ -4,13 +4,13 @@ import { Linkedin } from 'lucide-react';
 const Team = () => {
     const teamMembers = [
         {
-            name: 'Alex Chen',
+            name: 'Oluwademilade Abatan',
             role: 'CEO & Co-Founder',
             bio: 'Former blockchain architect with 10+ years in distributed systems.',
         },
         {
-            name: 'Sarah Johnson',
-            role: 'CTO',
+            name: 'Ogbaki David',
+            role: 'CTO & Co-Founder',
             bio: 'Expert in cryptography and consensus mechanisms, PhD in Computer Science.',
         },
         {
