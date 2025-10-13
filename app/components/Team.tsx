@@ -6,32 +6,28 @@ const Team = () => {
         {
             name: 'Oluwademilade Abatan',
             role: 'CEO & Co-Founder',
-            bio: 'Former blockchain architect with 10+ years in distributed systems.',
+            img: "img/ceo.jpeg",
         },
         {
             name: 'Ogbaki David',
             role: 'CTO & Co-Founder',
-            bio: 'Expert in cryptography and consensus mechanisms, PhD in Computer Science.',
+            img: "img/cto.jpeg",
         },
         {
-            name: 'Michael Rodriguez',
-            role: 'Head of Research',
-            bio: 'Published researcher in blockchain scalability and zero-knowledge proofs.',
+            name: 'Makanjuola Emmanuel',
+            role: 'Head of Product',
         },
         {
-            name: 'Emily Zhang',
+            name: 'Oyeyemi Stephen',
             role: 'Lead Developer',
-            bio: 'Full-stack blockchain developer specializing in smart contract security.',
         },
         {
-            name: 'David Kim',
+            name: 'Abdulkarim Elfa',
             role: 'Head of Operations',
-            bio: 'Experienced in scaling tech startups and building decentralized teams.',
         },
         {
             name: 'Kiara Tim',
             role: 'Head of Marketing',
-            bio: 'Experienced in scaling tech startups and building decentralized teams.',
         },
     ];
 
@@ -54,14 +50,21 @@ const Team = () => {
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
                                 <CardContent className="pt-6 pb-6 px-6">
+                                    {member.img ? (
+                                        <img
+                                            src={member.img}
+                                            alt={member.name}
+                                            className="w-24 h-24 rounded-full object-cover mx-auto mb-4"
+                                        />
+                                    ) : (
                                     <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                                         <div className="text-3xl font-bold text-primary">
                                             {member.name.split(' ').map(n => n[0]).join('')}
                                         </div>
                                     </div>
+                                    )}
                                     <h3 className="text-lg font-semibold mb-1">{member.name}</h3>
                                     <p className="text-primary text-sm font-medium mb-3">{member.role}</p>
-                                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{member.bio}</p>
                                     <button className="text-primary hover:text-primary/80 transition-colors">
                                         <Linkedin size={18} />
                                     </button>
@@ -81,15 +84,9 @@ const Team = () => {
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
                                     href="#"
-                                    className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary-hover transition-colors font-medium"
+                                    className="inline-flex items-center justify-center px-6 py-3 bg-white border-primary border-2 text-primary rounded-md hover:bg-primary hover:text-white transition-colors font-medium"
                                 >
                                     View Open Positions
-                                </a>
-                                <a
-                                    href="#"
-                                    className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary bg-background hover:bg-primary-light rounded-md transition-colors font-medium"
-                                >
-                                    Contact Us
                                 </a>
                             </div>
                         </CardContent>
