@@ -35,7 +35,7 @@ const Hero = () => {
               variant="outline"
               className="text-base w-full sm:w-auto hover:bg-primary/10"
             >
-              Learn More
+              <a href="#faq">Learn More</a>
             </Button>
           </div>
         </div>
