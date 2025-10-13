@@ -20,10 +20,12 @@ const Team = () => {
         {
             name: 'Oyeyemi Stephen',
             role: 'Lead Developer',
+            img: "img/steve.jpg"
         },
         {
             name: 'Abdulkarim Elfa',
             role: 'Head of Operations',
+            img: "img/elfa.JPG"
         },
         {
             name: 'Kiara Tim',

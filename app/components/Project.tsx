@@ -1,27 +1,35 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Blocks, Building2, Users, CreditCard } from 'lucide-react';
+"use client";
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Blocks, Building2, Users, CreditCard, Twitter } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const Projects = () => {
+  const router = useRouter();
   const projects = [
     {
       icon: Blocks,
       title: 'Orynex Blockchain',
       description: 'A high-performance, scalable blockchain infrastructure designed for enterprise applications and decentralized work environments.',
+      twitter: 'https://x.com/orynexlabs',
     },
     {
       icon: Building2,
       title: 'Skentral',
       description: 'A decentralized workspace platform enabling organizations to manage operations, projects, and teams in a trustless environment.',
+      twitter: 'https://x.com/SkentralX',
     },
     {
       icon: Users,
       title: 'HR Tools',
       description: 'Blockchain-powered human resources management tools for transparent recruitment, onboarding, and employee management.',
+      twitter: 'https://x.com/orynexlabs',
     },
     {
       icon: CreditCard,
       title: 'Payroll System',
       description: 'Automated, transparent payroll solutions leveraging smart contracts for instant, secure, and compliant payments.',
+      twitter: 'https://x.com/orynexlabs',
     },
   ];
 
@@ -52,6 +60,9 @@ const Projects = () => {
               <CardContent>
                 <CardDescription className="text-base">{project.description}</CardDescription>
               </CardContent>
+              <CardFooter className='flex flex-col justify-center items-center'>
+                <Button variant={"outline"} onClick={() => router.push(project.twitter)}><Twitter/> </Button>
+              </CardFooter>
             </Card>
           ))}
         </div>
