@@ -48,7 +48,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50 fade-in"
+              className=" flex justify-between hover:shadow-lg transition-all duration-300 border-border hover:border-primary/50 fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
@@ -60,8 +60,8 @@ const Projects = () => {
               <CardContent>
                 <CardDescription className="text-base">{project.description}</CardDescription>
               </CardContent>
-              <CardFooter className='flex flex-col justify-center items-center'>
-                <Button variant={"outline"} onClick={() => router.push(project.twitter)}><Twitter/> </Button>
+              <CardFooter className='mt-6 flex justify-center items-center'>
+                <Button variant={"outline"} onClick={() => router.push(project.twitter)}>Follow <Twitter/> </Button>
               </CardFooter>
             </Card>
           ))}
