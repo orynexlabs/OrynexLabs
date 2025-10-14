@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Orynex Labs | Blockchain & AI Innovation for the Future of Work",
   description:
-    "Orynex Labs is a global research and technology company building decentralized solutions that merge blockchain, AI, and work. We create infrastructure powering trustless, borderless collaboration for the new economy. We're also the team behind Skentral — the decentralized platform for freelancers and global work.",
+    "Orynex Labs is a global research and technology company building decentralized solutions that merge blockchain, AI, and work. We create infrastructure powering trustless, borderless collaboration for the new economy. We're also the team behind Qolahb — the decentralized platform for freelancers and global work.",
   icons: {
     icon: "/og-image.ico",
     shortcut: "/og-image.ico",
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     "Orynex Labs",
     "Orynex",
-    "Skentral",
-    "Skentral platform",
+    "Qolahb",
+    "Qolahb platform",
     "Blockchain innovation",
     "AI and blockchain company",
     "Decentralized technology",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Orynex Labs" }],
   openGraph: {
-    title: "Orynex Labs & Skentral | Innovating the Decentralized Future",
+    title: "Orynex Labs & Qolahb | Innovating the Decentralized Future",
     description:
-      "At Orynex Labs, we're redefining how the world works using blockchain and AI — powering projects like Skentral, a decentralized platform for freelancers and global teams.",
+      "At Orynex Labs, we're redefining how the world works using blockchain and AI — powering projects like Qolahb, a decentralized platform for freelancers and global teams.",
     url: "https://orynexlabs.com",
     siteName: "Orynex Labs",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "https://orynexlabs.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Orynex Labs and Skentral",
+        alt: "Orynex Labs and Qolahb",
       },
     ],
     locale: "en_US",
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Orynex Labs × Skentral | Blockchain Meets the Future of Work",
+    title: "Orynex Labs × Qolahb | Blockchain Meets the Future of Work",
     description:
-      "Building secure blockchain technologies that empower people and businesses worldwide through transparency, security, and innovation. Makers of Skentral — the decentralized work platform.",
+      "Building secure blockchain technologies that empower people and businesses worldwide through transparency, security, and innovation. Makers of Qolahb — the decentralized work platform.",
     creator: "@orynexlabs",
-    site: "@SkentralX",
+    site: "@QolahbX",
     images: ["https://orynexlabs.com/og-image.jpg"],
   },
   // 👇 AI & Search Engine Understanding (Structured Data)
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
       "sameAs": [
         "https://x.com/orynexlabs",
         "https://linkedin.com/company/orynexlabs",
-        "https://skentral.com",
-        "https://x.com/SkentralX"
+        "https://Qolahb.com",
+        "https://x.com/QolahbX"
       ],
       "founders": [
         {
@@ -91,12 +91,12 @@ export const metadata: Metadata = {
       ],
       "memberOf": {
         "@type": "Organization",
-        "name": "Skentral",
-        "url": "https://skentral.com",
+        "name": "Qolahb",
+        "url": "https://Qolahb.com",
         "description": "A decentralized platform for freelancers and businesses built by Orynex Labs."
       },
       "description":
-        "Orynex Labs is an AI and blockchain research company advancing the future of work through secure blockchain technology. The company also powers Skentral, a decentralized platform for freelancers and businesses.",
+        "Orynex Labs is an AI and blockchain research company advancing the future of work through secure blockchain technology. The company also powers Qolahb, a decentralized platform for freelancers and businesses.",
       "foundingDate": "2025",
       "foundingLocation": {
         "@type": "Place",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
         "Web3",
         "Future of Work",
         "Decentralized Economy",
-        "Skentral",
+        "Qolahb",
         "Freelance Platform"
       ]
     })
