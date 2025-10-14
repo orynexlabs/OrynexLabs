@@ -16,6 +16,7 @@ const Team = () => {
         {
             name: 'Makanjuola Emmanuel',
             role: 'Head of Product',
+            img: "img/babyscott.jpeg"
         },
         {
             name: 'Oyeyemi Stephen',

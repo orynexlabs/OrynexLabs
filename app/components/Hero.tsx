@@ -33,7 +33,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="text-base w-full sm:w-auto hover:bg-primary/10"
+              className="text-primary w-full sm:w-auto hover:bg-primary/10"
             >
               <a href="#faq">Learn More</a>
             </Button>
