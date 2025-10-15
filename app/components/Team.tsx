@@ -182,7 +182,7 @@ const Team = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="#"
+                                href="/careers"
                                 className="inline-flex items-center justify-center px-6 py-3 bg-white border-primary border-2 text-primary rounded-md hover:bg-primary hover:text-white transition-colors font-medium"
                             >
                                 View Open Positions

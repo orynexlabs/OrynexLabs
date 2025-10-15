@@ -65,7 +65,8 @@ export const metadata: Metadata = {
         "https://x.com/orynexlabs",
         "https://linkedin.com/company/orynexlabs",
         "https://Qolahb.com",
-        "https://x.com/QolahbX"
+        "https://x.com/QolahbX",
+        "https://github.com/orynexlabs"
       ],
       "founders": [
         {
