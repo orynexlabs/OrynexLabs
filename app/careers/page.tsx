@@ -80,7 +80,7 @@ const Careers = () => {
     <div className="min-h-screen">
       <Navigation />
 
-      <section className="pt-32 pb-20 bg-background mt-16">
+      <section className="pt-32 pb-20 bg-background mt-5">
         <div className="container-width">
           <div className="text-center mb-16 fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
