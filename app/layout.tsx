@@ -76,7 +76,7 @@ export const metadata: Metadata = {
            "image": "https://orynexlabs.com/img/ceo.jpeg",
           "sameAs": [
             "https://x.com/demilade1002",
-            "https://linkedin.com/in/oluwademilade-abatan"
+            "https://www.linkedin.com/in/oluwademilade-abatan-8a5010352/"
           ]
         },
         {
