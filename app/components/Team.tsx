@@ -188,7 +188,7 @@ const Team: FC = () => {
       name: "Ogbaki Paul",
       role: "Social Media Manager",
       img: "/img/paulo.jpeg",
-      linkedin: ""
+      linkedin: "https://www.linkedin.com/in/ogbaki-paul-11641b369"
     },
   ];
 

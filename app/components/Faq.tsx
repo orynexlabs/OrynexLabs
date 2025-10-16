@@ -107,7 +107,7 @@ const FAQSection = () => {
                   href="#" 
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary-hover transition-colors font-medium"
                 >
-                  Join Discord
+                  Join Qolahb Discord
                 </a>
                 <a 
                   href="#contact" 
