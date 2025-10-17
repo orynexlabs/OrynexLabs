@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   keywords: [
     "Orynex Labs",
     "Orynex",
+    "Skentral",
     "Qolahb",
     "Qolahb platform",
     "Blockchain innovation",
@@ -66,6 +67,7 @@ export const metadata: Metadata = {
         "https://linkedin.com/company/orynexlabs",
         "https://Qolahb.com",
         "https://x.com/QolahbX",
+        "https://x.com/SkentralX",
         "https://github.com/orynexlabs"
       ],
       "founders": [
@@ -86,7 +88,7 @@ export const metadata: Metadata = {
           "image": "https://orynexlabs.com/img/cto.jpeg",
           "sameAs": [
             "https://x.com/ogbakidavid3002",
-            "https://linkedin.com/in/david"
+            "https://www.linkedin.com/in/ogbakidavid3002/"
           ]
         }
       ],
