@@ -158,7 +158,7 @@ const Careers = () => {
             <p className="text-muted-foreground mb-4">
               Don&apos;t see a position that fits? We&apos;re always interested in hearing from talented people.
             </p>
-            <Link href="mailto:contact@orynexlabs.com?subject=Resume%20Submission" target="_blank" rel="noopener noreferrer">
+            <Link href="mailto:orynex.help@gmail.com?subject=Resume%20Submission" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg">Send Us Your Resume</Button>
             </Link>
 
