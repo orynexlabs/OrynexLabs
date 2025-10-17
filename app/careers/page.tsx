@@ -18,7 +18,7 @@ const jobOpenings: JobOpening[] = [
   //   department: "Engineering",
   //   location: "Remote",
   //   type: "Full-time",
-  //   description: "We're looking for an experienced full stack developer to help build and scale our infrastructure solutions."
+  //   description: "We&apos;re looking for an experienced full stack developer to help build and scale our infrastructure solutions."
   // },
   // {
   //   title: "Product Manager",
@@ -87,7 +87,7 @@ const Careers = () => {
               Join Our <span className="text-primary">Team</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Be part of a team that's building the future of work. We're always looking for talented people to join us.
+              Be part of a team that&apos;s building the future of work. We&apos;re always looking for talented people to join us.
             </p>
           </div>
 
@@ -115,46 +115,47 @@ const Careers = () => {
           <div>
             <h2 className="text-3xl font-bold text-center mb-12">Open Positions</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-              {jobOpenings.length == 0 ? (
+              {jobOpenings.length === 0 ? (
                 <div className="col-span-1 md:col-span-2 p-8 border border-border rounded-lg text-center fade-in">
                   <p className="text-center text-muted-foreground">No current openings. Please check back later!</p>
                 </div>
-
-              ) : jobOpenings.map((job, index) => (
-                <Card
-                  key={index}
-                  className="border-border hover:border-primary/50 transition-all duration-300 fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <CardHeader>
-                    <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
-                    <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-                      <span className="flex items-center gap-1">
-                        <Briefcase size={14} />
-                        {job.department}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <MapPin size={14} />
-                        {job.location}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock size={14} />
-                        {job.type}
-                      </span>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4">{job.description}</p>
-                    <Button className="w-full">Apply Now</Button>
-                  </CardContent>
-                </Card>
-              ))}
+              ) : (
+                jobOpenings.map((job, index) => (
+                  <Card
+                    key={index}
+                    className="border-border hover:border-primary/50 transition-all duration-300 fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <CardHeader>
+                      <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
+                      <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Briefcase size={14} />
+                          {job.department}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin size={14} />
+                          {job.location}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock size={14} />
+                          {job.type}
+                        </span>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground mb-4">{job.description}</p>
+                      <Button className="w-full">Apply Now</Button>
+                    </CardContent>
+                  </Card>
+                ))
+              )}
             </div>
           </div>
 
           <div className="mt-16 text-center">
             <p className="text-muted-foreground mb-4">
-              Don't see a position that fits? We're always interested in hearing from talented people.
+              Don&apos;t see a position that fits? We&apos;re always interested in hearing from talented people.
             </p>
             <Button variant="outline" size="lg">Send Us Your Resume</Button>
           </div>

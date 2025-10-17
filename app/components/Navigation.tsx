@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,9 +64,9 @@ const Navigation = () => {
     >
       <div className="container-width mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a href="/#home" className="text-2xl font-bold text-primary">
+          <Link href="/#home" className="text-2xl font-bold text-primary">
             Orynex Labs
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -76,7 +76,7 @@ const Navigation = () => {
                 : link.href;
 
               return (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => {
@@ -90,7 +90,7 @@ const Navigation = () => {
                   }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               );
             })}
           </div>
@@ -113,7 +113,7 @@ const Navigation = () => {
                 : link.href;
 
               return (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => {
@@ -127,7 +127,7 @@ const Navigation = () => {
                   }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               );
             })}
           </div>
