@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const faqData = [
@@ -103,12 +104,12 @@ const FAQSection = () => {
                 or contact us directly for more information.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="#" 
+                <Link 
+                  href="https://discord.com/invite/Fmk2apDUKQ" 
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary-hover transition-colors font-medium"
                 >
                   Join Discord
-                </a>
+                </Link>
                 <a 
                   href="#contact" 
                   className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary bg-background hover:bg-primary-light rounded-md transition-colors font-medium"
