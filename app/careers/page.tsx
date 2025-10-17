@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Briefcase, Users, Heart, Zap } from 'lucide-react';
+import Link from 'next/link';
 
 interface JobOpening {
   title: string;
@@ -157,7 +158,10 @@ const Careers = () => {
             <p className="text-muted-foreground mb-4">
               Don&apos;t see a position that fits? We&apos;re always interested in hearing from talented people.
             </p>
-            <Button variant="outline" size="lg">Send Us Your Resume</Button>
+            <Link href="mailto:contact@orynexlabs.com?subject=Resume%20Submission" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg">Send Us Your Resume</Button>
+            </Link>
+
           </div>
         </div>
       </section>
