@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Orynex Labs",
     images: [
       {
-        url: "https://orynexlabs.com/og-image.jpg",
+        url: "https://orynexlabs.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Orynex Labs and Qolahb",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
       "Building secure blockchain technologies that empower people and businesses worldwide through transparency, security, and innovation. Makers of Qolahb — the decentralized work platform.",
     creator: "@orynexlabs",
     site: "@QolahbX",
-    images: ["https://orynexlabs.com/og-image.jpg"],
+    images: ["https://orynexlabs.com/og-image.png"],
   },
   // 👇 AI & Search Engine Understanding (Structured Data)
   other: {
