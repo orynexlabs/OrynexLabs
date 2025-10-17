@@ -124,7 +124,12 @@
 
 * {
   @apply border-border;
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
+  font-family: "Space Grotesk";
+}
+
+.font-poppins {
+  font-family: "Poppins" !important;
 }
 
 body {
