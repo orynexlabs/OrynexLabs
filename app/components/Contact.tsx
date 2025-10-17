@@ -29,7 +29,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       {
         loading: "Sending your message...",
         success: <b>Message sent successfully! 🚀</b>,
-        error: <b>Something went wrong. Try again!</b>,
+        error: <b>❌ Failed to send message. Please try again later.</b>,
       },
       {
         style: {
@@ -44,7 +44,6 @@ const handleSubmit = async (e: React.FormEvent) => {
     formRef.current?.reset();
   } catch (error) {
     console.error("Email send error:", error);
-    toast.error("❌ Failed to send message. Please try again later.");
   } finally {
     setLoading(false);
   }
