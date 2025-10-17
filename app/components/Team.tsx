@@ -175,7 +175,7 @@ const Team: FC = () => {
     {
       name: "Victor Omondi",
       role: "Head of Community Team",
-      img: "/img/kiara.jpg",
+      img: "/img/vitoms.jpeg",
       linkedin: "https://www.linkedin.com/in/victor-omondi-onyango/"
     },
     {
