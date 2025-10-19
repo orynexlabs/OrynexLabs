@@ -1,9 +1,50 @@
 import Navigation from '../components/Navigation';
+import type { Metadata } from "next";
 import Footer from '../components/Footer';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Briefcase, Users, Heart, Zap } from 'lucide-react';
 import Link from 'next/link';
+
+
+export const metadata: Metadata = {
+  title: "Careers at Orynex Labs | Join the Future of Decentralized Work",
+  description:
+    "Explore career opportunities at Orynex Labs. Join a passionate team building innovative blockchain and AI solutions for the decentralized future of work.",
+  keywords: [
+    "Orynex Labs careers",
+    "Web3 jobs",
+    "Blockchain developer jobs",
+    "Remote tech jobs",
+    "Orynex hiring",
+    "Crypto startup jobs",
+    "AI blockchain company",
+  ],
+  openGraph: {
+    title: "Careers at Orynex Labs",
+    description:
+      "Join a passionate global team at Orynex Labs and help build the future of decentralized work.",
+    url: "https://orynexlabs.com/careers",
+    siteName: "Orynex Labs",
+    images: [
+      {
+        url: "https://orynexlabs.com/og-image.png", // (optional) add your own banner image
+        width: 1200,
+        height: 630,
+        alt: "Orynex Labs Careers Page",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers at Orynex Labs",
+    description:
+      "Join the Orynex Labs team and shape the decentralized future of work.",
+    images: ["https://orynexlabs.com/og-image.png"],
+  },
+};
 
 interface JobOpening {
   title: string;

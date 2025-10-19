@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://orynexlabs.com
+
+# Sitemaps
+Sitemap: https://orynexlabs.com/sitemap.xml
