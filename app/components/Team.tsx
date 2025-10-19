@@ -154,7 +154,7 @@ const TeamGrid: FC<TeamGridProps> = ({ members }) => (
 const Team: FC = () => {
   const technicalTeam: TeamMember[] = [
     {
-      name: "Oluwademilade Abatan",
+      name: "Demilade Abatan",
       role: "CEO & Co-Founder",
       img: "/img/ceo.jpeg",
       linkedin: "https://linkedin.com/in/oluwademilade",
