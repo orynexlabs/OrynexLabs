@@ -25,10 +25,10 @@ const Projects = () => {
     },
     {
       icon: Building2,
-      title: 'Qolahb',
+      title: 'Skentral',
       description:
         'A decentralized workspace platform enabling organizations to manage operations, projects, and teams in a trustless environment.',
-      twitter: 'https://x.com/QolahbX',
+      twitter: 'https://x.com/SkentralX',
     },
     {
       icon: Users,
@@ -39,7 +39,7 @@ const Projects = () => {
     },
     {
       icon: CreditCard,
-      title: 'Skentral',
+      title: 'Payroll',
       description:
         'Automated, transparent payroll solutions leveraging smart contracts for instant, secure, and compliant payments.',
       twitter: 'https://x.com/orynexlabs',

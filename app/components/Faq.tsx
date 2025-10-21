@@ -17,7 +17,7 @@ const faqData = [
   },
   {
     question: "Which projects are under Orynex Labs?",
-    answer: "Orynex Labs develops and manages several initiatives including Orynex (Blockchain), Qolahb (freelance and work ecosystem), HR & Skentral Payroll tools, and other upcoming decentralized applications."
+    answer: "Orynex Labs develops and manages several initiatives including Orynex (Blockchain), Skentral (freelance and work ecosystem), HR & Payroll tools, and other upcoming decentralized applications."
   },
   {
     question: "How does Orynex Labs ensure the security of its projects?",
