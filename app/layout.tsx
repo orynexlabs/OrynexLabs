@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description:
     "Orynex Labs is a global research and technology company building decentralized solutions that merge blockchain, AI, and work. We create infrastructure powering trustless, borderless collaboration for the new economy. We're also the team behind Skentral — the decentralized platform for freelancers and global work.",
   icons: {
-    icon: "/og-image.png",
-    shortcut: "/og-image.png",
+    icon: "/og-image.ico",
+    shortcut: "/og-image.ico",
     apple: "/og-image.png",
   },
   keywords: [
