@@ -3,64 +3,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Orynex Labs | Blockchain & AI Innovation for the Future of Work",
-  description:
-    "Orynex Labs is a global research and technology company building decentralized solutions that merge blockchain, AI, and work. We create infrastructure powering trustless, borderless collaboration for the new economy. We're also the team behind Skentral — the decentralized platform for freelancers and global work.",
+  title: "Orynex Labs | Blockchain, AI & Decentralized Future of Work",
+  description: "Orynex Labs builds decentralized blockchain & AI solutions, powering global work platforms like Skentral.",
   icons: {
     icon: "/og-image.ico",
     shortcut: "/og-image.ico",
     apple: "/og-image.png",
   },
-  keywords: [
-    "orynexlabs",
-    "OrynexLabs",
-    "Orynex Labs",
-    "Orynex",
-    "OrynexLabs",
-    "Orynex Labs and Skentral",
-    "Orynex Labs Skentral",
-    "Orynex Labs Skentral platform",
-    "Orynex Labs and Skentral platform",
-    "Orynex Labs and Skentral company",
-    "Orynex Labs and Skentral team",
-    "Orynex Labs and Skentral project",
-    "Orynex Labs and Skentral startup",
-    "Orynex Labs and Skentral innovation",
-    "Orynex Labs and Skentral blockchain",
-    "Orynex Labs and Skentral AI",
-    "Orynex Labs and Skentral Web3",
-    "Orynex Labs and Skentral Future of Work",
-    "Orynex Labs and Skentral Decentralized Economy",
-    "Orynex Labs and Skentral Skentral",
-    "Orynex Labs and Skentral Skentral platform",
-    "Orynex Labs and Skentral Blockchain innovation",
-    "Blockchain",
-    "AI",
-    "Web3",
-    "Future of Work",
-    "Decentralized Economy",
+  keywords: ["Orynex Labs",
+    "Blockchain", "AI",
+    "Decentralized platform",
     "Skentral",
-    "Skentral platform",
-    "Blockchain innovation",
-    "AI and blockchain company",
-    "Decentralized technology",
-    "Web3 research lab",
-    "Global work platform",
-    "Future of work startup",
-    "AI-driven blockchain projects",
-    "Crypto R&D lab",
-    "Freelance blockchain platform",
-    "Decentralized freelance platform",
-    "Blockchain for freelancers",
-    "AI and blockchain solutions",
-    "Skentral decentralized platform",
-    "Orynex Labs Skentral team",
-    "Orynex Labs Skentral company",
-    "Orynex Labs Skentral innovation",
-    "Orynex Labs Skentral project",
-    "Orynex Labs Skentral startup",
-    
+    "Future of Work",
+    "Web3",
+    "Global work platform"
   ],
+
   authors: [{ name: "Orynex Labs" }],
   openGraph: {
     title: "Orynex Labs & Skentral | Innovating the Decentralized Future",
@@ -73,7 +31,7 @@ export const metadata: Metadata = {
         url: "https://orynexlabs.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Orynex Labs and Skentral",
+        alt: "Orynex Labs: Blockchain & AI innovation powering Skentral"
       },
     ],
     locale: "en_US",
@@ -88,6 +46,7 @@ export const metadata: Metadata = {
     site: "@SkentralX",
     images: ["https://orynexlabs.com/og-image.png"],
   },
+
   // 👇 AI & Search Engine Understanding (Structured Data)
   other: {
     "application/ld+json": JSON.stringify({
@@ -95,7 +54,7 @@ export const metadata: Metadata = {
       "@type": "Organization",
       "name": "Orynex Labs",
       "url": "https://orynexlabs.com",
-      "logo": "https://orynex.com/og-image.png",
+      "logo": "https://orynexlabs.com/og-image.png",
       "sameAs": [
         "https://x.com/orynexlabs",
         "https://linkedin.com/company/orynexlabs",
@@ -138,6 +97,13 @@ export const metadata: Metadata = {
         "@type": "Place",
         "name": "Lagos, Nigeria"
       },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "email": "contact@orynexlabs.com",
+        "contactType": "customer support",
+        "areaServed": "Global",
+        "availableLanguage": ["English"]
+      }],
       "areaServed": "Global",
       "keywords": [
         "Blockchain",
@@ -165,7 +131,7 @@ export default function RootLayout({
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
 
       </head>
       <body
