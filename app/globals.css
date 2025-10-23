@@ -124,8 +124,8 @@
 
 * {
   @apply border-border;
-  /* font-family: "Poppins"; */
   font-family: "Space Grotesk";
+  /* background-color: transparent; or remove entirely */
 }
 
 .font-poppins {
@@ -149,7 +149,6 @@ canvas {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 
 .section-padding {

@@ -223,12 +223,13 @@ const Team: FC = () => {
         {/* Community Team */}
         <h3 className="text-2xl font-bold text-center mt-16 mb-6">Community Team</h3>
         <TeamGrid members={communityTeam} />
-
         {/* Join Our Team Section */}
         <div className="text-center mt-16">
-          <Card className="bg-white border-primary/20 max-w-2xl mx-auto">
+          <Card className="bg-card border border-border shadow-md max-w-2xl mx-auto transition-colors duration-300">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-primary mb-4">Join Our Team</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">
+                Join Our Team
+              </h3>
               <p className="text-muted-foreground mb-6">
                 We&apos;re always looking for talented individuals who share our
                 vision of revolutionizing the future of work through blockchain
@@ -237,7 +238,13 @@ const Team: FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/careers"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white border-primary border-2 text-primary rounded-md hover:bg-primary hover:text-white transition-colors font-medium"
+                  className="
+            inline-flex items-center justify-center px-6 py-3 rounded-md font-medium
+            border-2 transition-colors duration-300
+            bg-background text-primary border-primary
+            hover:bg-primary hover:text-primary-foreground
+            dark:bg-secondary dark:text-primary-foreground dark:hover:bg-primary dark:hover:text-white
+          "
                 >
                   View Open Positions
                 </a>

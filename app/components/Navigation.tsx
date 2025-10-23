@@ -18,22 +18,18 @@ const Navigation = () => {
   // Detect if we are on another page (e.g., /careers)
   useEffect(() => {
     const path = window.location.pathname;
-    if (path !== "/" && path !== "") {
-      setActiveSection(path); // e.g., '/careers'
-    }
+    if (path !== "/" && path !== "") setActiveSection(path);
   }, []);
 
-  // Detect which section is visible on homepage
+  // Detect visible section on homepage
   useEffect(() => {
-    if (window.location.pathname !== "/") return; // only run on homepage
+    if (window.location.pathname !== "/") return;
 
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-          }
+          if (entry.isIntersecting) setActiveSection(`#${entry.target.id}`);
         });
       },
       { rootMargin: "-50% 0px -50% 0px" }
@@ -58,13 +54,16 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-sm border-b border-border"
+          ? "bg-white/90 dark:bg-[#070B15]/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800"
           : "bg-transparent"
       }`}
     >
       <div className="container-width mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/#home" className="text-2xl font-bold text-primary">
+          <Link
+            href="/#home"
+            className="text-2xl font-bold text-primary dark:text-blue-400"
+          >
             Orynex Labs
           </Link>
 
@@ -85,8 +84,8 @@ const Navigation = () => {
                   }}
                   className={`text-sm font-medium transition-colors ${
                     activeSection === normalizedHref
-                      ? "text-primary font-semibold"
-                      : "text-foreground/80 hover:text-primary"
+                      ? "text-primary dark:text-blue-400 font-semibold"
+                      : "text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
                   }`}
                 >
                   {link.label}
@@ -97,7 +96,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-gray-900 dark:text-gray-100"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -106,7 +105,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-background">
+          <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-[#070B15]">
             {navLinks.map((link) => {
               const normalizedHref = link.href.startsWith("/#")
                 ? link.href.replace("/", "")
@@ -122,8 +121,8 @@ const Navigation = () => {
                   }}
                   className={`block py-3 text-sm font-medium transition-colors ${
                     activeSection === normalizedHref
-                      ? "text-primary font-semibold"
-                      : "text-foreground/80 hover:text-primary"
+                      ? "text-primary dark:text-blue-400 font-semibold"
+                      : "text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400"
                   }`}
                 >
                   {link.label}
