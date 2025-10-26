@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Orynex Labs | Blockchain, AI & Decentralized Future of Work",
+  title: {
+    default: "Orynex Labs | Blockchain, AI & Decentralized Future of Work",
+  template: "%s | Orynex Labs",
+  },
   description: "Orynex Labs builds decentralized blockchain & AI solutions, powering global work platforms like Skentral.",
   icons: {
     icon: "/og-image.ico",
@@ -11,6 +13,8 @@ export const metadata: Metadata = {
     apple: "/og-image.png",
   },
   keywords: ["Orynex Labs",
+    "orynexlabs",
+    "orynex labs",
     "Blockchain", "AI",
     "Decentralized platform",
     "Skentral",
@@ -19,7 +23,7 @@ export const metadata: Metadata = {
     "Global work platform"
   ],
 
-  authors: [{ name: "Orynex Labs" }],
+  authors: [{ name: "Orynex Labs",  url: 'https://orynexlabs.com'}],
   openGraph: {
     title: "Orynex Labs & Skentral | Innovating the Decentralized Future",
     description:
@@ -45,6 +49,22 @@ export const metadata: Metadata = {
     creator: "@orynexlabs",
     site: "@SkentralX",
     images: ["https://orynexlabs.com/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://orynexlabs.com'
   },
 
   // 👇 AI & Search Engine Understanding (Structured Data)
@@ -120,23 +140,21 @@ export const metadata: Metadata = {
 
 
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" className="dark">
-      <head>
+  export default function RootLayout({
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
+    return (
+      <html lang="en" className="dark">
+        <head>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
 
       </head>
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased`}>
         {children}
       </body>
     </html>
