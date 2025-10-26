@@ -1,9 +1,19 @@
-# *
+# robots.txt for https://orynexlabs.com
+# Allow most crawlers but block sensitive or internal paths.
 User-agent: *
-Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
 
-# Host
-Host: https://orynexlabs.com
+# Allow Next.js static assets so crawlers can fetch CSS/JS/images required to render pages
+Allow: /_next/static/
+Allow: /_next/image/
 
-# Sitemaps
+# If you have other static folders, allow them (uncomment/edit as needed)
+# Allow: /static/
+
+# Crawl-delay: optional (many major crawlers ignore this). Use only if you really need to slow crawlers.
+# Crawl-delay: 1
+
+# Sitemap (must be on the same host)
 Sitemap: https://orynexlabs.com/sitemap.xml
