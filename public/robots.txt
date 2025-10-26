@@ -1,5 +1,6 @@
-# robots.txt for https://orynexlabs.com
-# Allow most crawlers but block sensitive or internal paths.
+# Placeholder robots.txt — managed by next-sitemap
+# This file is intentionally present as a placeholder. next-sitemap will generate/overwrite robots.txt at build time
+# according to `next-sitemap.config.js`. Keep a copy here for local/dev preview and documentation.
 User-agent: *
 Disallow: /private/
 Disallow: /admin/
@@ -9,11 +10,4 @@ Disallow: /api/
 Allow: /_next/static/
 Allow: /_next/image/
 
-# If you have other static folders, allow them (uncomment/edit as needed)
-# Allow: /static/
-
-# Crawl-delay: optional (many major crawlers ignore this). Use only if you really need to slow crawlers.
-# Crawl-delay: 1
-
-# Sitemap (must be on the same host)
 Sitemap: https://orynexlabs.com/sitemap.xml
