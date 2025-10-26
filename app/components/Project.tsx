@@ -10,10 +10,9 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Blocks, Building2, Users, CreditCard, Twitter } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 
 const Projects = () => {
-  const router = useRouter();
+
 
   const projects = [
     {
@@ -82,12 +81,10 @@ const Projects = () => {
                 </CardContent>
 
                 <CardFooter className="mt-6 flex justify-center items-center">
-                  <Button
-                    variant="outline"
-                    onClick={() => router.push(project.twitter)}
-                    className="flex items-center gap-2"
-                  >
-                    Follow <Twitter className="w-4 h-4" aria-hidden="true" />
+                  <Button asChild variant="outline" className="flex items-center gap-2">
+                    <a href={project.twitter} target="_blank" rel="noopener noreferrer">
+                      Follow <Twitter className="w-4 h-4" aria-hidden="true" />
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>
