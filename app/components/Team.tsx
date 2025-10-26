@@ -84,16 +84,16 @@ const TeamGrid: FC<TeamGridProps> = ({ members }) => (
     {/* Mobile Swiper */}
     <div className="sm:hidden">
       <Swiper
-        spaceBetween={16}
-        slidesPerView={1.2}
+        spaceBetween={0}
+        slidesPerView={1}
         pagination={{ clickable: true }}
         modules={[Pagination]}
       >
         {members.map((member, index) => (
           <SwiperSlide key={index}>
             <Card
-              className="text-center border-border hover:border-primary/50 transition-all duration-300 fade-in mx-auto"
-              style={{ animationDelay: `${index * 0.1}s`, width: "90%" }}
+              className="text-center border-border hover:border-primary/50 transition-all duration-300 fade-in w-full"
+              style={{ animationDelay: `${index * 0.1}s`}}
             >
               <CardContent className="pt-6 pb-6 px-6">
                 {member.img ? (
