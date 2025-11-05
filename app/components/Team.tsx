@@ -183,6 +183,12 @@ const Team: FC = () => {
       img: "/img/elfa.JPG",
       linkedin: "https://www.linkedin.com/in/abdelkarim-elfar-b89a9a275/",
     },
+    {
+      name: "Ibrahim Aliyu",
+      role: "Web3 Protocol Engineer",
+      img: "/img/aliyu.jpeg",
+      linkedin: "https://www.linkedin.com/in/adewale-adeyemi-2b4b6215b/",
+    },
   ];
 
   const communityTeam: TeamMember[] = [
