@@ -187,7 +187,7 @@ const Team: FC = () => {
       name: "Ibrahim Aliyu",
       role: "Web3 Protocol Engineer",
       img: "/img/aliyu.jpeg",
-      linkedin: "https://www.linkedin.com/in/adewale-adeyemi-2b4b6215b/",
+      linkedin: "https://www.linkedin.com/in/aliyu-anate/",
     },
   ];
 
